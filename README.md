@@ -16,5 +16,5 @@ LinkedIn: https://linkedin.com/in/alan-newberry/
 
 ## ✅ Credits
 
-© Inspired by serozr. All rights reserved.  
+© By serozr. All rights reserved.  
 Customized by 44ghost.
