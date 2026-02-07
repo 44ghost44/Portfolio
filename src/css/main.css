@@ -1,16 +1,9 @@
-/* signed: serozr */
-/*
-    File: main.css
-    Purpose: main stylesheet for the portfolio
-    Signed by: serozr
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Terminal Boot Screen */
 .boot-screen {
     position: fixed;
     top: 0;
@@ -25,8 +18,6 @@
     opacity: 1;
     transition: opacity 0.5s ease-out;
 }
-
-/* End of file - signed: serozr */
 
 .boot-screen.fade-out {
     opacity: 0;
@@ -45,12 +36,12 @@
 }
 
 .ascii-art {
-    color: #00FF8C;
+    color: #00E5A0;
     font-size: 0.7rem;
     line-height: 1.2;
     text-align: center;
     font-family: 'Courier New', monospace;
-    text-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
+    text-shadow: 0 0 10px rgba(0, 229, 160, 0.5);
     animation: glitch 3s infinite;
 }
 
@@ -74,7 +65,7 @@
 .boot-terminal p:nth-child(7) { animation-delay: 3.5s; }
 
 .boot-prompt {
-    color: #00D9FF;
+    color: #4DA3FF;
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -89,7 +80,7 @@
 }
 
 .boot-ok {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .boot-ready {
@@ -120,10 +111,10 @@
 
 .boot-progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #00FF8C, #00D9FF);
+    background: linear-gradient(90deg, #00E5A0, #4DA3FF);
     width: 0%;
     animation: progress 2s ease-out forwards 4s;
-    box-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
+    box-shadow: 0 0 10px rgba(0, 229, 160, 0.5);
 }
 
 @keyframes progress {
@@ -132,7 +123,7 @@
 
 .boot-footer {
     text-align: center;
-    color: #00FF8C;
+    color: #00E5A0;
     font-size: 0.9rem;
     opacity: 0;
     animation: bootLine 0.3s forwards 4.5s, blink 1s infinite 5s;
@@ -150,19 +141,19 @@
 @keyframes glitch {
     0%, 90%, 100% { 
         transform: translate(0);
-        text-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
+        text-shadow: 0 0 10px rgba(0, 229, 160, 0.5);
     }
     92% { 
         transform: translate(-2px, 2px);
-        text-shadow: 0 0 10px rgba(0, 255, 140, 0.8), 2px 0 5px rgba(255, 0, 0, 0.5);
+        text-shadow: 0 0 10px rgba(0, 229, 160, 0.8), 2px 0 5px rgba(255, 0, 0, 0.5);
     }
     94% { 
         transform: translate(2px, -2px);
-        text-shadow: 0 0 10px rgba(0, 255, 140, 0.8), -2px 0 5px rgba(0, 0, 255, 0.5);
+        text-shadow: 0 0 10px rgba(0, 229, 160, 0.8), -2px 0 5px rgba(0, 0, 255, 0.5);
     }
     96% { 
         transform: translate(0);
-        text-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
+        text-shadow: 0 0 10px rgba(0, 229, 160, 0.5);
     }
 }
 
@@ -180,7 +171,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(#00FF8C 1px, transparent 1px);
+    background-image: radial-gradient(#00E5A0 1px, transparent 1px);
     background-size: 50px 50px;
     opacity: 0.05;
     z-index: -1;
@@ -207,7 +198,7 @@ nav {
 }
 
 .logo {
-    color: #00FF8C;
+    color: #00E5A0;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -221,7 +212,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .hero {
@@ -240,11 +231,11 @@ nav {
 
 .tag {
     display: inline-block;
-    border: 1px solid #00FF8C;
+    border: 1px solid #00E5A0;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     background: rgba(26, 26, 26, 0.7);
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 2rem;
     font-size: 0.9rem;
 }
@@ -252,7 +243,7 @@ nav {
 h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #00FF8C, #00D9FF);
+    background: linear-gradient(45deg, #00E5A0, #4DA3FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -266,13 +257,13 @@ h1 {
 
 .terminal-window {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem auto;
     max-width: 700px;
     text-align: left;
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.2);
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.2);
 }
 
 .terminal-header {
@@ -289,7 +280,7 @@ h1 {
 
 .dot-red { background: #FF3E3E; }
 .dot-yellow { background: #FFD700; }
-.dot-green { background: #00FF8C; }
+.dot-green { background: #00E5A0; }
 
 .terminal-text {
     font-size: 0.95rem;
@@ -297,7 +288,7 @@ h1 {
 }
 
 .terminal-text .prompt {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .terminal-text .command {
@@ -309,13 +300,13 @@ h1 {
 }
 
 .terminal-text .link {
-    color: #00D9FF;
+    color: #4DA3FF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .terminal-text .link:hover {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .cta-buttons {
@@ -337,23 +328,23 @@ h1 {
 
 .btn-primary {
     background: transparent;
-    border-color: #00FF8C;
-    color: #00FF8C;
+    border-color: #00E5A0;
+    color: #00E5A0;
 }
 
 .btn-primary:hover {
-    background: #00FF8C;
+    background: #00E5A0;
     color: #121212;
 }
 
 .btn-secondary {
     background: transparent;
-    border-color: #00D9FF;
-    color: #00D9FF;
+    border-color: #4DA3FF;
+    color: #4DA3FF;
 }
 
 .btn-secondary:hover {
-    background: #00D9FF;
+    background: #4DA3FF;
     color: #121212;
 }
 
@@ -372,7 +363,7 @@ h2 {
 
 h2::before {
     content: '#';
-    color: #00FF8C;
+    color: #00E5A0;
     margin-right: 0.5rem;
 }
 
@@ -383,10 +374,9 @@ h2::after {
     left: 0;
     width: 100px;
     height: 3px;
-    background: #00FF8C;
+    background: #00E5A0;
 }
 
-/* About Section */
 .about-container {
     margin-top: 3rem;
 }
@@ -410,18 +400,18 @@ h2::after {
 }
 
 .about-text .highlight {
-    color: #00FF8C;
+    color: #00E5A0;
     font-weight: bold;
 }
 
 .about-text .link {
-    color: #00D9FF;
+    color: #4DA3FF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .about-text .link:hover {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .about-stats {
@@ -435,20 +425,20 @@ h2::after {
     text-align: center;
     padding: 1.5rem;
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     transition: all 0.3s;
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.3);
-    border-color: #00FF8C;
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.3);
+    border-color: #00E5A0;
 }
 
 .stat-number {
     font-size: 2.5rem;
-    color: #00FF8C;
+    color: #00E5A0;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -465,10 +455,10 @@ h2::after {
 
 .code-window {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.2);
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.2);
 }
 
 .code-header {
@@ -477,7 +467,7 @@ h2::after {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: 1px solid rgba(0, 255, 140, 0.3);
+    border-bottom: 1px solid rgba(0, 229, 160, 0.3);
 }
 
 .code-dot {
@@ -517,14 +507,13 @@ h2::after {
 }
 
 .code-property {
-    color: #00D9FF;
+    color: #4DA3FF;
 }
 
 .code-string {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
-/* Certifications & Awards Section */
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -534,7 +523,7 @@ h2::after {
 
 .cert-card {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 15px;
     padding: 2rem;
     transition: all 0.3s;
@@ -549,7 +538,7 @@ h2::after {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(0, 255, 140, 0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(0, 229, 160, 0.1), transparent);
     transform: rotate(45deg);
     transition: all 0.6s;
 }
@@ -561,20 +550,20 @@ h2::after {
 
 .cert-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 40px rgba(0, 255, 140, 0.4);
-    border-color: #00FF8C;
+    box-shadow: 0 0 40px rgba(0, 229, 160, 0.4);
+    border-color: #00E5A0;
 }
 
 .cert-icon {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 140, 0.5));
+    filter: drop-shadow(0 0 10px rgba(0, 229, 160, 0.5));
 }
 
 .cert-badge {
-    background: linear-gradient(135deg, rgba(0, 255, 140, 0.2), rgba(0, 217, 255, 0.2));
-    border: 1px solid rgba(0, 255, 140, 0.4);
+    background: linear-gradient(135deg, rgba(0, 229, 160, 0.2), rgba(77, 163, 255, 0.2));
+    border: 1px solid rgba(0, 229, 160, 0.4);
     border-radius: 10px;
     padding: 0.8rem 1rem;
     margin-bottom: 1.5rem;
@@ -593,7 +582,7 @@ h2::after {
 }
 
 .cert-title {
-    color: #00FF8C;
+    color: #00E5A0;
     font-size: 0.85rem;
     font-weight: bold;
 }
@@ -603,7 +592,7 @@ h2::after {
 }
 
 .cert-issuer {
-    color: #00D9FF;
+    color: #4DA3FF;
     font-size: 0.8rem;
 }
 
@@ -630,17 +619,17 @@ h2::after {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    border-top: 1px solid rgba(0, 255, 140, 0.2);
+    border-top: 1px solid rgba(0, 229, 160, 0.2);
 }
 
 .cert-date {
-    color: #00D9FF;
+    color: #4DA3FF;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
 .cert-link {
-    color: #00FF8C;
+    color: #00E5A0;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
@@ -648,7 +637,7 @@ h2::after {
 }
 
 .cert-link:hover {
-    color: #00D9FF;
+    color: #4DA3FF;
     transform: translateX(5px);
 }
 
@@ -667,7 +656,7 @@ h2::after {
 
 .project-card {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
     transition: all 0.3s;
@@ -675,12 +664,12 @@ h2::after {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.3);
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.3);
     will-change: transform;
 }
 
 .project-card h3 {
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -692,14 +681,14 @@ h2::after {
 }
 
 .project-link {
-    color: #00D9FF;
+    color: #4DA3FF;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .project-link:hover {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 footer {
@@ -711,7 +700,7 @@ footer {
 }
 
 footer .signature {
-    color: #00FF8C;
+    color: #00E5A0;
     font-weight: bold;
     cursor: pointer;
 }
@@ -736,13 +725,13 @@ footer .signature {
 
 .skill-category {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
 }
 
 .skill-category h3 {
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }
@@ -767,7 +756,7 @@ footer .signature {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, #00FF8C, #00D9FF);
+    background: linear-gradient(90deg, #00E5A0, #4DA3FF);
     border-radius: 4px;
     transition: width 1s ease-out;
     will-change: width;
@@ -785,7 +774,7 @@ footer .signature {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, #00FF8C, #00D9FF);
+    background: linear-gradient(180deg, #00E5A0, #4DA3FF);
 }
 
 .timeline-item {
@@ -807,7 +796,7 @@ footer .signature {
 
 .timeline-content {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
     position: relative;
@@ -828,20 +817,20 @@ footer .signature {
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
-    background: #00FF8C;
+    background: #00E5A0;
     border-radius: 50%;
     border: 3px solid #121212;
-    box-shadow: 0 0 20px rgba(0, 255, 140, 0.5);
+    box-shadow: 0 0 20px rgba(0, 229, 160, 0.5);
 }
 
 .timeline-content h3 {
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
 }
 
 .timeline-date {
-    color: #00D9FF;
+    color: #4DA3FF;
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
@@ -860,7 +849,7 @@ footer .signature {
 
 .blog-card {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s;
@@ -868,18 +857,18 @@ footer .signature {
 
 .blog-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.3);
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.3);
     will-change: transform;
 }
 
 .blog-header {
-    background: linear-gradient(135deg, rgba(0, 255, 140, 0.2), rgba(0, 217, 255, 0.2));
+    background: linear-gradient(135deg, rgba(0, 229, 160, 0.2), rgba(77, 163, 255, 0.2));
     padding: 1rem 2rem;
-    border-bottom: 1px solid rgba(0, 255, 140, 0.3);
+    border-bottom: 1px solid rgba(0, 229, 160, 0.3);
 }
 
 .blog-date {
-    color: #00D9FF;
+    color: #4DA3FF;
     font-size: 0.85rem;
 }
 
@@ -888,7 +877,7 @@ footer .signature {
 }
 
 .blog-card h3 {
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -907,12 +896,12 @@ footer .signature {
 }
 
 .blog-tag {
-    background: rgba(0, 255, 140, 0.1);
-    color: #00FF8C;
+    background: rgba(0, 229, 160, 0.1);
+    color: #00E5A0;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
 }
 
 .contact-container {
@@ -929,7 +918,7 @@ footer .signature {
 
 .contact-item {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
@@ -938,7 +927,7 @@ footer .signature {
 
 .contact-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 140, 0.3);
+    box-shadow: 0 0 30px rgba(0, 229, 160, 0.3);
     will-change: transform;
 }
 
@@ -948,24 +937,24 @@ footer .signature {
 }
 
 .contact-item h3 {
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .contact-item a {
-    color: #00D9FF;
+    color: #4DA3FF;
     text-decoration: none;
     word-break: break-all;
 }
 
 .contact-item a:hover {
-    color: #00FF8C;
+    color: #00E5A0;
 }
 
 .contact-form {
     background: rgba(26, 26, 26, 0.8);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 10px;
     padding: 2rem;
 }
@@ -976,7 +965,7 @@ footer .signature {
 
 .form-group label {
     display: block;
-    color: #00FF8C;
+    color: #00E5A0;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
@@ -985,7 +974,7 @@ footer .signature {
 .form-group textarea {
     width: 100%;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 255, 140, 0.3);
+    border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 5px;
     padding: 0.8rem;
     color: #fff;
@@ -996,8 +985,8 @@ footer .signature {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #00FF8C;
-    box-shadow: 0 0 15px rgba(0, 255, 140, 0.3);
+    border-color: #00E5A0;
+    box-shadow: 0 0 15px rgba(0, 229, 160, 0.3);
 }
 
 .form-group textarea {
@@ -1009,8 +998,8 @@ footer .signature {
     width: 100%;
     padding: 1rem;
     background: transparent;
-    border: 1px solid #00FF8C;
-    color: #00FF8C;
+    border: 1px solid #00E5A0;
+    color: #00E5A0;
     border-radius: 5px;
     font-family: 'Courier New', monospace;
     font-weight: bold;
@@ -1019,7 +1008,7 @@ footer .signature {
 }
 
 .submit-btn:hover {
-    background: #00FF8C;
+    background: #00E5A0;
     color: #121212;
 }
 
@@ -1033,11 +1022,9 @@ footer .signature {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #00FF8C;
+    background: #00E5A0;
     transition: all 0.3s;
 }
-
-/* Easter egg styles removed */
 
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
@@ -1082,7 +1069,7 @@ footer .signature {
     .nav-links a {
         margin: 0.5rem 0;
         padding: 1rem;
-        border-bottom: 1px solid rgba(0, 255, 140, 0.1);
+        border-bottom: 1px solid rgba(0, 229, 160, 0.1);
     }
     
     .about-content {

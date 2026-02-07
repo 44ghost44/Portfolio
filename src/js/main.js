@@ -1,22 +1,13 @@
-// signed: serozr
-/*
-    File: main.js
-    Purpose: handles boot screen, observers and UI interactions
-    Signed by: serozr
-*/
-// Boot Screen Animation
 document.addEventListener('DOMContentLoaded', () => {
     const bootScreen = document.getElementById('bootScreen');
     
-    // Hide boot screen after animation completes
     setTimeout(() => {
         bootScreen.classList.add('fade-out');
         setTimeout(() => {
             bootScreen.style.display = 'none';
         }, 500);
-    }, 6000); // 6 seconds total boot time
+    }, 6000); 
     
-    // Allow skipping with any key press or click
     const skipBoot = () => {
         bootScreen.classList.add('fade-out');
         setTimeout(() => {
@@ -121,5 +112,3 @@ window.addEventListener('scroll', () => {
         document.body.style.overflowY = 'auto';
     }, 150);
 }, { passive: true });
-
-// End of file - signed: serozr
