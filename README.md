@@ -8,8 +8,6 @@
 
 ---
 
-## 👤 Author
-
 **Alan Newberry (44ghost)**  
 GitHub: https://github.com/44ghost44  
 LinkedIn: https://linkedin.com/in/alan-newberry/
