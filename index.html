@@ -534,7 +534,64 @@
     </section>
 
     <section id="projects">
-        <h2 data-i18n="projectsTitle">Projects</h2>
+        <h2 data-i18n="projectsAppsTitle">Application Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3>Fix – iOS App</h3>
+                <p data-i18n="projectFixIos">
+                    Native iOS app built with Swift. Handles authentication, ticket creation and tracking, communication with the Fix backend, and the full release lifecycle, including internal tests, closed and open testing, TestFlight distribution, communication with Apple support, and successful App Store review approval. The app has not been launched yet due to marketing decisions.
+                </p>
+                <p class="project-privacy" data-i18n="projectFixIosCode">
+                    Code: private repository (FixiOS).
+                </p>
+            </div>
+            <div class="project-card fade-in" style="animation-delay: 0.05s;">
+                <h3>Fix – Android App</h3>
+                <p data-i18n="projectFixAndroid">
+                    Native Android app developed in Kotlin, mirroring the iOS features: login, ticket lifecycle, and integration with the Fix backend. Managed the full Google Play release pipeline, including internal tests, closed and open testing tracks, communication with Play Store support, and successful store review approval. The app has not been launched yet due to marketing decisions.
+                </p>
+                <p class="project-privacy" data-i18n="projectFixAndroidCode">
+                    Code: private repository (FixAndroid).
+                </p>
+            </div>
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <h3>Fix – Backend API</h3>
+                <p data-i18n="projectFixBackend">
+                    JavaScript backend that centralizes business logic for users, tickets, statuses, and permissions. Designed as a REST API for both mobile apps and the admin panel, with a focus on security and scalability.
+                </p>
+                <p class="project-privacy" data-i18n="projectFixBackendCode">
+                    Code: private repository (FixBackend).
+                </p>
+            </div>
+            <div class="project-card fade-in" style="animation-delay: 0.15s;">
+                <h3>Fix – Admin Panel</h3>
+                <p data-i18n="projectFixAdmin">
+                    Web admin panel built with JavaScript, HTML, and CSS. Allows administrators to manage tickets, users, and review key metrics of the Fix platform, integrating directly with the Fix backend API.
+                </p>
+                <p class="project-privacy" data-i18n="projectFixAdminCode">
+                    Code: private repository (fixadmin).
+                </p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Oops – Mobile Word Puzzle</h3>
+        <p style="margin-bottom: 1rem; max-width: 800px;" data-i18n="projectOopsIntro">
+            Mobile word search game called Oops, built with React Native and Supabase for iOS and Android. Includes user authentication, persistent progress, dynamic word grids, and in-app advertising using AdMob.
+        </p>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3 data-i18n="projectOopsTitle">Oops – React Native Word Soup</h3>
+                <p data-i18n="projectOopsDesc">
+                    Cross-platform word soup game where users must find hidden words in a dynamic grid. Uses Supabase for authentication and storing game progress, and integrates AdMob for rewarded and banner ads to monetize the app.
+                </p>
+                <p class="project-privacy" data-i18n="projectOopsCode">
+                    Code: in development, repository currently private.
+                </p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 3rem;" data-i18n="projectsTitleSecurity">Cybersecurity Projects</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
                 <h3>Vandal</h3>
@@ -543,7 +600,7 @@
             </div>
             <div class="project-card fade-in" style="animation-delay: 0.05s;">
                 <h3>Extrasy Cracker</h3>
-                <p data-i18n="projectExtrasy">ETool to crack passwords, MD5, SHA1, SHA256, SHA384, SHA512, SHA3, NTLM, Whirlpool, MySQL, bcrypt, crypt-sha512.</p>
+                <p data-i18n="projectExtrasy">Tool to crack passwords, MD5, SHA1, SHA256, SHA384, SHA512, SHA3, NTLM, Whirlpool, MySQL, bcrypt, crypt-sha512.</p>
                 <a href="https://github.com/44ghost44/Extrasy-Cracker" target="_blank" class="project-link">View Repo &rarr;</a>
             </div>
             <div class="project-card fade-in" style="animation-delay: 0.1s;">
@@ -676,6 +733,20 @@
                 certVerify: "Verify →",
                 copiedText: "Copied!",
                 projectsTitle: "Projects",
+                projectsAppsTitle: "Application Projects",
+                projectsTitleSecurity: "Cybersecurity Projects",
+                projectFixIos: "Native iOS app built with Swift. Handles authentication, ticket creation and tracking, communication with the Fix backend, and the full release lifecycle, including internal tests, closed and open testing, TestFlight distribution, communication with Apple support, and successful App Store review approval. The app has not been launched yet due to marketing decisions.",
+                projectFixIosCode: "Code: private repository (FixiOS).",
+                projectFixAndroid: "Native Android app developed in Kotlin, mirroring the iOS features: login, ticket lifecycle, and integration with the Fix backend. Managed the full Google Play release pipeline, including internal tests, closed and open testing tracks, communication with Play Store support, and successful store review approval. The app has not been launched yet due to marketing decisions.",
+                projectFixAndroidCode: "Code: private repository (FixAndroid).",
+                projectFixBackend: "JavaScript backend that centralizes business logic for users, tickets, statuses, and permissions. Designed as a REST API for both mobile apps and the admin panel, with a focus on security and scalability.",
+                projectFixBackendCode: "Code: private repository (FixBackend).",
+                projectFixAdmin: "Web admin panel built with JavaScript, HTML, and CSS. Allows administrators to manage tickets, users, and review key metrics of the Fix platform, integrating directly with the Fix backend API.",
+                projectFixAdminCode: "Code: private repository (fixadmin).",
+                projectOopsIntro: "Mobile word search game called Oops, built with React Native and Supabase for iOS and Android. Includes user authentication, persistent progress, dynamic word grids, and in-app advertising using AdMob.",
+                projectOopsTitle: "Oops – React Native Word Soup",
+                projectOopsDesc: "Cross-platform word soup game where users must find hidden words in a dynamic grid. Uses Supabase for authentication and storing game progress, and integrates AdMob for rewarded and banner ads to monetize the app.",
+                projectOopsCode: "Code: in development, repository currently private.",
                 projectVandal: "Advanced Web Vulnerability Scanner",
                 projectExtrasy: "Tool to crack passwords, MD5, SHA1, SHA256, SHA384, SHA512, SHA3, NTLM, Whirlpool, MySQL, bcrypt, crypt-sha512.",
                 projectGhost: "A simple and visual bash tool that helps you put your WiFi interface into monitor mode.",
@@ -764,6 +835,20 @@
                 certVerify: "Verificar →",
                 copiedText: "¡Copiado!",
                 projectsTitle: "Proyectos",
+                projectsAppsTitle: "Proyectos de aplicaciones",
+                projectsTitleSecurity: "Proyectos de ciberseguridad",
+                projectFixIos: "App nativa iOS desarrollada en Swift. Gestiona autenticación, creación y seguimiento de tickets, comunicación con el backend de Fix y todo el ciclo de publicación, incluyendo tests internos, pruebas cerradas y abiertas, distribución con TestFlight, comunicación con el soporte de Apple y aprobación exitosa de la revisión de la App Store. La app aún no fue lanzada por decisiones de marketing.",
+                projectFixIosCode: "Código: repositorio privado (FixiOS).",
+                projectFixAndroid: "App nativa Android desarrollada en Kotlin, con las mismas funcionalidades que la versión iOS: login, ciclo de vida de tickets e integración con el backend de Fix. Gestioné todo el pipeline de publicación en Google Play, incluyendo tests internos, pruebas cerradas y abiertas, comunicación con el soporte de Play Store y aprobación exitosa de la revisión de la tienda. La app aún no fue lanzada por decisiones de marketing.",
+                projectFixAndroidCode: "Código: repositorio privado (FixAndroid).",
+                projectFixBackend: "Backend en JavaScript que centraliza la lógica de negocio de usuarios, tickets, estados y permisos. Diseñado como API REST para las apps móviles y el panel de administración, con foco en seguridad y escalabilidad.",
+                projectFixBackendCode: "Código: repositorio privado (FixBackend).",
+                projectFixAdmin: "Panel web de administración desarrollado con JavaScript, HTML y CSS. Permite a administradores gestionar tickets, usuarios y revisar métricas clave de la plataforma Fix, integrándose directamente con la API del backend.",
+                projectFixAdminCode: "Código: repositorio privado (fixadmin).",
+                projectOopsIntro: "Juego móvil de sopa de letras llamado Oops, desarrollado con React Native y Supabase para iOS y Android. Incluye autenticación de usuarios, progreso persistente, tableros de palabras dinámicos y publicidad integrada con AdMob.",
+                projectOopsTitle: "Oops – React Native Sopa De Letras",
+                projectOopsDesc: "Juego de sopa de letras multiplataforma donde los usuarios deben encontrar palabras ocultas en una grilla dinámica. Usa Supabase para la autenticación y el guardado del progreso de juego, e integra AdMob para anuncios recompensados y banners para monetizar la app.",
+                projectOopsCode: "Código: en desarrollo, repositorio actualmente privado.",
                 projectVandal: "Escáner avanzado de vulnerabilidades web.",
                 projectExtrasy: "Tool para crackear contraseñas, MD5, SHA1, SHA256, SHA384, SHA512, SHA3, NTLM, Whirlpool, MySQL, bcrypt, crypt-sha512.",
                 projectGhost: "Herramienta bash sencilla y visual que te ayuda a poner tu interfaz WiFi en modo monitor.",
